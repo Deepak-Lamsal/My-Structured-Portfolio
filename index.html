@@ -15,7 +15,7 @@
     <!-- Navigation Bar -->
     <header>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
             <a href="projects.html">Projects</a>
@@ -26,9 +26,11 @@
 
     <!-- Home Section -->
 <section class="hero" id="home">
+
     <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
     <source src="WhatsApp Video 2026-11-14 at 8.43.01 AM.mp4" type="video/mp4">
 </video>
+
 <button class="sound-btn" id="soundBtn" aria-label="Toggle sound">🔇</button>
 
     <img src="me.jpg" alt="Photo of Deepak" class="profile-photo">
@@ -120,7 +122,7 @@
     const video = document.getElementById("heroVideo");
     const btn = document.getElementById("soundBtn");
 
-    video.volume = 0.2;   // minimal sound (0 = silent, 1 = full)
+    video.volume = 0.1;   // minimal sound (0 = silent, 1 = full)
 
     btn.addEventListener("click", () => {
         video.muted = !video.muted;
