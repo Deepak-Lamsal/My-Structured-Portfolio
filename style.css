@@ -475,7 +475,7 @@ footer p {
 
 .about-facts strong {
     display: block;
-    color: #38bdf8;
+    color: #000000;
     font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -484,6 +484,12 @@ footer p {
 
 .about-facts span {
     font-size: 15px;
+}
+.about-facts div:hover {
+    transform: translateY(-5px);
+    background-color: #8d8df0;
+    border-color: #000000;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .about-actions {
@@ -504,17 +510,17 @@ footer p {
 }
 
 .about-btn:hover {
-    background-color: rgba(56, 189, 248, 0.12);
+    background-color: rgb(204, 250, 1);
     transform: translateY(-2px);
 }
 
 .about-btn.primary {
-    background-color: #f1f5f9;
-    color: #0b1120;
+    background-color: #001830;
+    color: #ffffff;
 }
 
 .about-btn.primary:hover {
-    background-color: #bae6fd;
+    background-color: #001830;
 }
 
 /* Sections */
@@ -544,7 +550,8 @@ footer p {
 
 .card:hover {
     transform: translateY(-5px);
-    border-color: #38bdf8;
+    background-color: #d8f900;
+    border-color: #000000;
 }
 
 .card h3 {
@@ -553,7 +560,7 @@ footer p {
 }
 
 .card p {
-    color: #aab7cc;
+    color: #000000;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -577,9 +584,9 @@ footer p {
     top: 4px;
     width: 14px;
     height: 14px;
-    background: #38bdf8;
+    background: #000000;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #0b1120;
+    box-shadow: 0 0 0 4px #ff0000;
 }
 
 .timeline-item h4 {
@@ -588,14 +595,14 @@ footer p {
 }
 
 .timeline-item p {
-    color: #aab7cc;
-    font-size: 14px;
+    color: #000000;
+    font-size: 15px;
     line-height: 1.7;
 }
 
 /* Active link in navbar */
 nav a.active {
-    background-color: #000000;
+    background-color: #ff0101;
     color: #ffffff;
 }
 
