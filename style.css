@@ -22,7 +22,7 @@ body {
    background-size: 100% 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 
@@ -258,6 +258,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 footer p {
