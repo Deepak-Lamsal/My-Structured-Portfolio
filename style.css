@@ -704,7 +704,7 @@ nav a.active {
 .fill {
     height: 100%;
     border-radius: 10px;
-    background: linear-gradient(90deg, #0ea5e9, #8b5cf6);
+    background: linear-gradient(90deg, #000000, #000000);
 }
 
 /* Cards */
@@ -720,7 +720,7 @@ nav a.active {
 
 .skill-card {
     padding: 24px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(84, 220, 106);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(15, 23, 42, 0.1);
@@ -732,6 +732,7 @@ nav a.active {
 .skill-card:hover {
     transform: translateY(-5px);
     border-color: #0ea5e9;
+    background-color: #ff0000;
 }
 
 .skill-card h3 {
