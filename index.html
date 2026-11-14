@@ -26,6 +26,10 @@
 
     <!-- Home Section -->
 <section class="hero" id="home">
+    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+    <source src="WhatsApp Video 2026-11-14 at 8.43.01 AM.mp4" type="video/mp4">
+</video>
+<button class="sound-btn" id="soundBtn" aria-label="Toggle sound">🔇</button>
 
     <img src="me.jpg" alt="Photo of Deepak" class="profile-photo">
 
@@ -112,6 +116,17 @@
 </footer>
 
     <script src="script.js"></script>
+    <script>
+    const video = document.getElementById("heroVideo");
+    const btn = document.getElementById("soundBtn");
+
+    video.volume = 0.2;   // minimal sound (0 = silent, 1 = full)
+
+    btn.addEventListener("click", () => {
+        video.muted = !video.muted;
+        btn.textContent = video.muted ? "🔇" : "🔊";
+    });
+</script>
 
 </body>
 </html>
