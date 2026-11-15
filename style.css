@@ -720,7 +720,7 @@ nav a.active {
 
 .skill-card {
     padding: 24px;
-    background: rgb(84, 220, 106);
+    background: rgb(153, 229, 166);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(15, 23, 42, 0.1);
@@ -732,7 +732,7 @@ nav a.active {
 .skill-card:hover {
     transform: translateY(-5px);
     border-color: #0ea5e9;
-    background-color: #ff0000;
+    background-color: #ffffff;
 }
 
 .skill-card h3 {
@@ -757,12 +757,12 @@ nav a.active {
 
 .chips span {
     padding: 8px 18px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgb(0, 0, 0);
     border: 1px solid rgba(14, 165, 233, 0.45);
     border-radius: 30px;
     font-size: 14px;
     font-weight: bold;
-    color: #0369a1;
+    color: #ffffff;
 }
 
 .chips.big {
@@ -857,4 +857,54 @@ nav a.active {
     .skill-cards.three,
     .sketch-grid { grid-template-columns: 1fr; }
     .sketch-grid img { height: 220px; }
+}
+/* ===== TOOLS & SOFTWARE ===== */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 22px 12px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool:hover {
+    transform: translateY(-6px);
+    border-color: #ff0000;
+    box-shadow: 0 12px 28px rgba(14, 165, 233, 0.2);
+    background : #d0ff00;
+}
+
+.tool img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;   /* keeps every logo the same size without stretching */
+}
+
+.tool span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+@media (max-width: 850px) {
+    .tools-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 500px) {
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
 }
