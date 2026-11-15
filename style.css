@@ -873,7 +873,7 @@ nav a.active {
     align-items: center;
     gap: 12px;
     padding: 22px 12px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(15, 23, 42, 0.1);
@@ -886,7 +886,7 @@ nav a.active {
     transform: translateY(-6px);
     border-color: #ff0000;
     box-shadow: 0 12px 28px rgba(14, 165, 233, 0.2);
-    background : #d0ff00;
+    background : #ff0000;
 }
 
 .tool img {
@@ -898,7 +898,7 @@ nav a.active {
 .tool span {
     font-size: 14px;
     font-weight: bold;
-    color: #1e293b;
+    color: #000000;
 }
 
 @media (max-width: 850px) {
