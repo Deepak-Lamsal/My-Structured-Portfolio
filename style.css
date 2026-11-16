@@ -908,3 +908,210 @@ nav a.active {
 @media (max-width: 500px) {
     .tools-grid { grid-template-columns: repeat(2, 1fr); }
 }
+/* ===== PROJECTS PAGE ===== */
+.tag {
+    display: inline-block;
+    padding: 5px 14px;
+    margin-bottom: 12px;
+    background: rgba(14, 165, 233, 0.12);
+    border: 1px solid rgba(14, 165, 233, 0.4);
+    border-radius: 30px;
+    color: #0369a1;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Website mockup cards */
+.mockup {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 34px;
+    align-items: center;
+    padding: 26px;
+    margin-bottom: 36px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.mockup.reverse .mockup-img {
+    order: 2;
+}
+
+.mockup-img {
+    overflow: hidden;
+    border-radius: 14px;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    background: #ffffff;
+}
+
+.mockup-img img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.5s ease;
+}
+
+.mockup:hover .mockup-img img {
+    transform: scale(1.04);
+}
+
+.mockup-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mockup-info > p {
+    color: #475569;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.learn-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.learn-box > div {
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 12px;
+}
+
+.learn-box h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.learn-box ul {
+    padding-left: 18px;
+}
+
+.learn-box li {
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0f172a;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-links a:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+/* Graphic design cards */
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.design-card {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(14, 165, 233, 0.2);
+}
+
+.design-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.design-body {
+    padding: 20px;
+}
+
+.design-body h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.design-body > p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.design-body details {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.design-body summary {
+    cursor: pointer;
+    color: #0369a1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.design-body details p {
+    color: #475569;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .mockup {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .mockup.reverse .mockup-img {
+        order: 0;
+    }
+
+    .learn-box {
+        grid-template-columns: 1fr;
+    }
+
+    .design-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .design-grid {
+        grid-template-columns: 1fr;
+    }
+}
